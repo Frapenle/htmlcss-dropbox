@@ -4,10 +4,24 @@
     box-sizing: border-box;
 }
 
+.red{
+    background-color: burlywood;
+}
+
 /* basic components */
 body{
     font-size: 100%;
 font-family: 'Work Sans', sans-serif;
+}
+
+h1{
+    font-size: 4rem;
+    padding: 3.5rem 0;
+}
+
+h2{
+    font-size: 2rem;
+    padding: 3rem 0;
 }
 
 ul{
@@ -58,8 +72,8 @@ ul li a{
 }
 
 .pad-10{
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 /* header */
@@ -102,11 +116,6 @@ header ul li a {
     flex-wrap: wrap;
 }
 
-.jumbo .container h1{
-    font-size: 4rem;
-    padding: 55px 0;
-}
-
 .jumbo img{
     width: 610px;
 }
@@ -128,13 +137,15 @@ header ul li a {
 }
 
 /* main */
-main{
-    height: 1000px;
-    background-color: rgb(244, 188, 103);
+main.m-top{
+    margin-top: 80px;
+}
+
+main h2{
+    text-align: left;
 }
 
 main>div{
-    background-color: rgb(71, 247, 88);
     height: 100%;
 }
 
