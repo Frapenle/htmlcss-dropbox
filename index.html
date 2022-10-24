@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +7,33 @@
     <title>Dropbox</title>
     <!-- add favicon -->
     <!-- add font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- add fontawesome link -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- header Sx logo and Dx info-->
-    <header>
-        <div class="header-left"></div>
-        <div class="header-right"></div>
+    <header class="flex fl-c">
+        <!-- header left -->
+        <div class="header-left flex">
+            <img src="./img/logo-small.png" alt="logo dropbox" class="logo">
+            <ul class="flex">
+                <li><a href="#">Perchè Dropbox</a></li>
+                <li><a href="#">Funzioni</a></li>
+                <li><a href="#">Piani e Prezzi</a></li>
+            </ul>
+        </div>
+        <!-- header right -->
+        <div class="header-right flex fl-r fl-c">
+            <ul class="flex">
+                <li><a href="#">Supporto</a></li>
+                <li><a href="#">Contatta l'ufficio vendite</a></li>
+                <li><a href="#">Accedi</a></li>
+            </ul>
+            <button class="btn btn-blue">Inizia</button>
+        </div>
     </header>
 
     <!-- jumbo 80% width-->
@@ -32,7 +51,7 @@
     </section>
 
     <!-- F.A.Q. -->
-    <section class="faq container pad-10">test</section>
+    <section class="faq container pad-10">faq</section>
 
     <!-- footer top and bottom -->
     <footer></footer>
