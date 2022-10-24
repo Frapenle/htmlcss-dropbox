@@ -3,3 +3,84 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* basic components */
+body{
+    font-size: 100%;
+    /*! font-family: ; */
+}
+
+.btn{}
+
+.btn-blue{}
+
+.btn-white{}
+
+
+
+.container{
+    width: 80%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.pad-10{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: bisque;
+}
+
+/* jumbo */
+.jumbo{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(117, 214, 252);
+}
+
+/* main */
+main{
+    height: 1000px;
+    background-color: rgb(244, 188, 103);
+}
+
+main>div{
+    background-color: rgb(71, 247, 88);
+    height: 100%;
+}
+
+/* section boxes */
+.container-boxes{
+    width: 100%;
+    height: 600px;
+    background-color: red;
+}
+
+.box-squares{
+    border: 4px solid yellow;
+    height: 65%;
+}
+
+.box-rectangle{
+    background-color: rgb(117, 214, 252);
+    height: 35%;
+}
+
+/* FAQ */
+.faq{
+    border: 3px solid black;
+    height: 600px;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    color: white;
+}
