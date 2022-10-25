@@ -285,6 +285,7 @@ h4.punti-salienti{
 /* partners section */
 .partners{
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .partners-img{
@@ -304,6 +305,32 @@ h4.punti-salienti{
     padding-bottom: 20px;
 }
 
+/* business */
+.business{
+    flex-wrap: wrap;
+    column-gap: 35px;
+    row-gap: 70px;
+}
+
+.business h2{
+    padding-bottom: 0;
+}
+
+.business .main-plans{
+    border: none;
+}
+
+.business .main-plans .img{
+background-image: url(../img/business-feature-switching-tools.png);
+background-size: cover;
+height: 160px;
+margin-bottom: 20px;
+padding: 0 5px;
+}
+
+.business .main-plans p{
+    margin-top: 20px;
+}
 
 
 
