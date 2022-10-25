@@ -39,36 +39,142 @@
 
     <!-- jumbo 80% width-->
     <section class="jumbo">
-        <div class="container flex">
-            <h1>Tutto ciò che ti serve per il<br>lavoro, in un unico posto</h1>
-            <div class="jumbo-l">
-                <p>Finalmente tutti i tuoi strumenti Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dalllo stesso posto.</p>
-                <button class="btn btn-blue">Inizia la tua prova gratuita</button>
-                <p>Annulla in qualsiasi momento</p>
-                <i class="fa-sharp fa-solid fa-arrow-down"></i>
+        <div class="bg-blue">
+            <div class="container flex">
+                <h1>Tutto ciò che ti serve per il<br>lavoro, in un unico posto</h1>
+                <div class="jumbo-l">
+                    <p>Finalmente tutti i tuoi strumenti Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dalllo stesso posto.</p>
+                    <button class="btn btn-blue">Inizia la tua prova gratuita</button>
+                    <p>Annulla in qualsiasi momento</p>
+                    <i class="fa-sharp fa-solid fa-arrow-down"></i>
+                </div>
+                <img src="./img/jumbo.png" alt="immagine dropbox" class="jumbo-r">
             </div>
-            <img src="./img/jumbo.png" alt="immagine dropbox" class="jumbo-r">
         </div>
     </section>
 
-    <!-- main 70% width-->
-    <main class="container pad-10 m-top red">
-        <div class="">
-            <h2>Trova il piano business che fa per te</h2>
-        </div>
+    <!-- main 70% width -->
+    <main class="container pad-10">
+
+            <div class="main-top m-top">
+                <h2>Trova il piano business che fa per te</h2>
+                <input type="radio" name="fatturazione" id="fatt-mensile" required>
+                <label for="fatt-mensile">Fatturazione mensile</label>
+                <input type="radio" name="fatturazione" id="fatt-annuale" required>
+                <label for="fatt-annuale">Fatturazione annuale</label>
+            </div>
+
+            <!-- column box plan -->
+            <div class="box-plans flex">
+
+                <div class="main-plans">
+                    <div class="plan-single"><i class="fa-solid fa-user"></i>&nbsp;Singolo</div>
+                    <div class="description-plan">
+                        <h3>Professional</h3>
+                        <h4>&euro; 12</h4>
+                        <div class="durata">/mese</div>
+                        <ul>
+                            <li class="utente"><i class="fa-solid fa-user"></i>1 utente</li>
+                            <li class="spazio"><i class="fa-solid fa-folder"></i>5Tb di spazio di archiviazione sicuro</li>
+                            <li class="condividi"><i class="fa-solid fa-share-nodes"></i>Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                        </ul>
+                        <button class="btn btn-blue">Prova gratis per 30 giorni</button>
+                        <div>oppure <a href="#">acquista ora</a></div>
+                        <div class="br"></div>
+                        <h4 class="punti-salienti">Punti salienti del piano</h4>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>Invia file fino a 100 GB con Dropbox transfert</li>
+                            <li><i class="fa-solid fa-check"></i>Cartelle offline su dispositivi mobili</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="main-plans">
+                    <div class="plan-single"><i class="fa-solid fa-user"></i> Singolo</div>
+                    <div class="description-plan">
+                        <h3>Advanced</h3>
+                        <h4>&euro; 18</h4>
+                        <div class="durata">/utente/mese</div>
+                        <ul>
+                            <li class="utente"><i class="fa-solid fa-user"></i>1 utente</li>
+                            <li class="spazio"><i class="fa-solid fa-folder"></i>5Tb di spazio di archiviazione sicuro</li>
+                            <li class="condividi"><i class="fa-solid fa-share-nodes"></i>Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                        </ul>
+                        <button class="btn btn-blue">Prova gratis per 30 giorni</button>
+                        <div>oppure <a href="#">acquista ora</a></div>
+                        <div class="br"></div>
+                        <h4 class="punti-salienti">Punti salienti del piano</h4>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>Nessun limite di spazio per i file</li>
+                            <li><i class="fa-solid fa-check"></i>Cartelle offline su dispositivi mobili</li>
+                            <li><i class="fa-solid fa-check"></i>Risparmio del 50% rispetto alle soluzioni singole</li>
+                            <li><i class="fa-solid fa-check"></i>Possibilità di inserire nuovi membri nel team</li>
+                            <li><i class="fa-solid fa-check"></i>Gestione dei permessi in base ai ruoli</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="main-plans">
+                    <div class="plan-single"><i class="fa-solid fa-user"></i> Singolo</div>
+                    <div class="description-plan">
+                        <h3>Enterprice</h3>
+                        <h4>Contattaci</h4>
+                        <div class="durata">-</div>
+                        <ul>
+                            <li class="utente"><i class="fa-solid fa-user"></i>3 o più utenti</li>
+                            <li class="spazio"><i class="fa-solid fa-folder"></i>Soluzioni personalizzabili per la tua azienda</li>
+                            <li class="condividi"><i class="fa-solid fa-share-nodes"></i>Assistenza personalizzata per aiutare le amministratori in una gestione u larga scala</li>
+                        </ul>
+                            <button class="btn btn-blue">Contattaci</button>
+                        <div>oppure <a href="#">acquista ora</a></div>
+                        <div class="br"></div>
+                        <h4 class="punti-salienti">Punti salienti del piano</h4>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>Cartelle offline su dispositivi mobili</li>
+                            <li><i class="fa-solid fa-check"></i>Servizio assistenza 24/h</li>
+                            <li><i class="fa-solid fa-check"></i>Possibilità di personalizzazione totale</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- full width box -->
+                <div class="main-plans">
+                    <div class="plan-single"><i class="fa-solid fa-user"></i> Singolo</div>
+                    <div class="description-plan relative">
+                        <h3>Enterprice</h3>
+                        <h4>Conta l'ufficio vendite per i prezzi</h4>
+                        <button class="btn btn-blue"><a href="#">Contatta l'ufficio vendite</a></button>
+                        <p>Lorem ipsum dolor sit. Itaque tenetur accusantium doloribus dolores hic nulla ad porro amet blanditiis, odio, ratione magni adipisci corrupti excepturi iure.</p>
+                    </div>
+                </div>
+
+            </div>
     </main>
 
-    <!-- section full width width squares of different dimensions -->
-    <section class="container-boxes">
-        <div class="box-squares"></div>
-        <div class="box-rectangle"></div>
+    <section class="partners container pad-10 flex">
+        <div class="partners-img">
+            <img src="./img/partner.png" alt="partner image">
+        </div>
+        <div class="partners-text">
+            <h3>Entra in contatto con un partner Dropbox</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum culpa enim facere quisquam corrupti optio, repudiandae, unde impedit fugit, accusamus nemo fugiat. Iusto at fuga temporibus iure deleniti eveniet enim!</p>
+            <button class="btn btn-white"><a href="#">Trova un partner</a></button>
+        </div>
     </section>
 
+
+
+    <!-- section full width width squares of different dimensions -->
+    <!-- <section class="container-boxes">
+        <div class="box-squares"></div>
+        <div class="box-rectangle"></div>
+    </section> -->
+
     <!-- F.A.Q. -->
-    <section class="faq container pad-10">faq</section>
+    <!-- <section class="faq container pad-10">faq</section> -->
 
     <!-- footer top and bottom -->
-    <footer></footer>
+    <!-- <footer></footer> -->
     
 </body>
 </html>
