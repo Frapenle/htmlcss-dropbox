@@ -421,8 +421,17 @@ span.author{
 
 /* FAQ */
 .faq{
-    background-color: rgb(244, 188, 103);
-    height: 600px;
+    margin-top: 30px;
+}
+
+.faq .br{
+    margin: initial;
+    border: 0.5px solid black;
+    width: 100%;
+}
+
+.faq h4{
+    line-height: 5rem;
 }
 
 /* footer */
