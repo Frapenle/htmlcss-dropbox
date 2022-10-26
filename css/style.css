@@ -4,25 +4,23 @@
     box-sizing: border-box;
 }
 
-.red{
-    background-color: burlywood;
-}
-
 /* basic components */
 body{
     font-size: 100%;
-font-family: 'Work Sans', sans-serif;
-overflow-x: hidden;
+    font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 h1{
-    font-size: 4rem;
+    font-size: 3.5rem;
+    font-weight: 900;
     padding: 3.5rem 0;
 }
 
 h2{
     font-size: 2rem;
     padding: 3rem 0;
+    font-weight: 600;
 }
 
 h3{
@@ -31,6 +29,7 @@ h3{
 
 p{
     font-size: .8rem;
+    color: hsl(210deg 4% 18%);
 }
 
 ul{
@@ -38,12 +37,12 @@ ul{
     padding: 0;
 }
 
-header ul>li{
-    padding-left: 1rem;
-}
-
 ul li a{
     text-decoration: none;
+}
+
+ul li a:hover{
+    color: #0093CE;
 }
 
 .btn{
@@ -51,18 +50,20 @@ ul li a{
     cursor: pointer;
 }
 
-.btn:hover{}
+.hover:hover{
+    background-color: #0162ffce;
+}
 
 .btn-blue{
     background-color: #0161FF;
-    color: white;
+    color: #c3dafd;
     border: none;
+    transition: .2s;
 }
 
 .btn-white{
     background-color: white;
-    border: 1px solid black;
-
+    border: 1px solid rgb(78, 78, 78);
 }
 
 button a{
@@ -82,6 +83,10 @@ button a{
     justify-content: flex-end;
 }
 
+.fl-sb {
+    justify-content: space-between;
+}
+
 .container{
     width: 65%;
     max-width: 1140px;
@@ -98,6 +103,10 @@ header {
     width: 100%;
     height: 60px;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
 }
 
 .logo{
@@ -109,8 +118,13 @@ header ul li a {
     font-size: .8rem;
 }
 
+header ul>li {
+    margin-left: 1.3rem;
+}
+
 .header-left{
-    margin-left: 10px;
+    margin-left: 14px;
+    align-items: center;
 }
 
 .header-right {
@@ -118,13 +132,14 @@ header ul li a {
 }
 
 .header-right ul {
-    padding-right: 10px;
+    margin-right: 14px;
 }
 
 /* jumbo */
 .jumbo{
     width: 100%;
     font-size: .9rem;
+    margin-top: 60px;
 }
 
 .jumbo .bg-blue{
@@ -148,18 +163,17 @@ header ul li a {
 
 .jumbo-l i {
     font-size: 2.5rem;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
 }
 
 .jumbo-l button{
     margin: 1.5rem 0;
 }
 
-.jumbo-r{
-}
-
 /* main */
-main{}
+main.container{
+    margin-top: 5rem;
+}
 
 main.m-top{
     margin-top: 70px;
@@ -179,13 +193,13 @@ main input[type="radio"]{
 
 main label{
     font-size: 0.7rem;
-    padding-right: 3rem;
+    padding-right: 2rem;
 }
 
 .box-plans {
-    width: 100%;
+    /* width: 100%;
     height: 100%;
-    justify-content: space-between;
+    justify-content: space-between; */
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -193,7 +207,7 @@ main label{
 .main-plans{
     width: 30%;
     flex-grow: 1;
-    border: 1px solid black;
+    border: 1px solid #dbdbdb;
 }
 
 .business .main-plans{
@@ -210,7 +224,15 @@ main label{
     font-size: .7rem;
     text-align: center;
     padding: 5px;
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.box-plans ul li{
+    color: rgb(102, 102, 102);
+}
+
+.box-plans ul li i {
+    color: black;
 }
 
 /* description plan */
@@ -237,6 +259,7 @@ main label{
     grid-template-columns: auto;
     gap: 5px;
     justify-content: start;
+    align-items: baseline;
 }
 
 .description-plan .durata{
@@ -277,14 +300,8 @@ h4.punti-salienti{
     padding-bottom: 25px;
 }
 
-.fa-check{
+ul li i.fa-check{
     color:#0161FF;
-}
-
-.test{
-    width: 100%;
-    height: 100px;
-    background-color: aquamarine;
 }
 
 /* partners section */
@@ -360,6 +377,7 @@ h4.punti-salienti{
 .bottom-business-title a{
     display: block;
     margin: 50px 0 80px;
+    font-size: .8rem;
 }
 
 /* section boxes */
@@ -378,7 +396,8 @@ h4.punti-salienti{
 .squares div img{
     width: 50%;
     background-position: center;
-    filter: invert(100%)
+    filter: invert(100%);
+    opacity: 0.7;
 }
 
 .squares div{
@@ -408,11 +427,14 @@ h4.punti-salienti{
     filter: none;
     margin-bottom: 10px;
     align-self: flex-start;
+    opacity: 1;
+    width: 50%;
 }
 span.author{
     display: block;
     padding: 30px 0;
     align-self: flex-start;
+    font-size: .8rem;
 }
 
 .squares div:nth-child(4) {
@@ -441,9 +463,14 @@ span.author{
 
 .box-squares > .br{
     align-self: flex-start;
-    width: 100px;
-    border: .5px solid grey;
+    width: 80px;
+    border: .5px solid #c8c8c8;
     margin: 30px 0;
+}
+
+.box-squares:hover img{
+    opacity: 1;
+    width: 60%;
 }
 
 .full-width-box{
@@ -453,9 +480,10 @@ span.author{
     background-color: #B3CFE7;
 }
 
-.fl-sb{
-    justify-content: space-between;
+.full-width-box h2{
+    font-weight: 600;
 }
+
 .full-width-box button{
     margin-top: 3rem;
     padding: 10px 30px;
@@ -475,16 +503,27 @@ span.author{
     width: 100%;
 }
 
-.faq h4{
-    line-height: 5rem;
+.faq h2 {
+    font-weight: 600;
 }
 
-.break{
+.faq h5{
+    padding: 1rem 0;
+    margin: 1rem 0;
+    cursor: s-resize;
+    font-weight: 700;
+}
+
+.question {
     justify-content: space-between;
+    margin-right: 2rem;
 }
 
-.break i{
+.question i{
     align-self: center;
+    font-size: .7rem;
+    padding: 10px;
+    cursor:s-resize;
 }
 
 /* footer */
@@ -510,7 +549,13 @@ footer ul li{
 
 footer ul li a{
     color: white;
+}
 
+.footer-bottom .lang,
+.footer-bottom .lang a{
+    color: grey;
+    text-decoration: none;
+    font-size: .8rem;
 }
 
 footer .br{
@@ -524,5 +569,5 @@ footer .br{
 }
 
 .lang .fa-sort-up{
-    vertical-align: sub;
+    vertical-align: -webkit-baseline-middle;
 }
