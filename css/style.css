@@ -138,7 +138,6 @@ header ul>li {
 /* jumbo */
 .jumbo{
     width: 100%;
-    font-size: .9rem;
     margin-top: 60px;
 }
 
@@ -397,7 +396,8 @@ ul li i.fa-check{
     width: 50%;
     background-position: center;
     filter: invert(100%);
-    opacity: 0.7;
+    opacity: 0.9;
+    transition: .5s;
 }
 
 .squares div{
@@ -560,7 +560,7 @@ footer ul li a{
 
 footer .br{
     width: 100px;
-    border: 0.5px solid white;
+    border: 0.5px solid grey;
     margin-top: 5rem;
 }
 
