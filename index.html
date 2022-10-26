@@ -11,37 +11,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;600;800;900&display=swap" rel="stylesheet">
     <!-- add fontawesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- header Sx logo and Dx info-->
     <header class="flex fl-c fl-sb">
         <!-- header left -->
-        <div class="header-left flex">
+        <nav class="header-left flex">
             <img src="./img/logo-small.png" alt="logo dropbox" class="logo">
             <ul class="flex">
                 <li><a href="#">Perchè Dropbox</a></li>
                 <li><a href="#">Funzioni</a></li>
                 <li><a href="#">Piani e Prezzi</a></li>
             </ul>
-        </div>
+        </nav>
         <!-- header right -->
-        <div class="header-right flex fl-r fl-c">
+        <nav class="header-right flex fl-r fl-c">
             <ul class="flex">
                 <li><a href="#">Supporto</a></li>
                 <li><a href="#">Contatta l'ufficio vendite</a></li>
                 <li><a href="#">Accedi</a></li>
             </ul>
             <button class="btn btn-blue hover">Inizia</button>
-        </div>
+        </nav>
     </header>
 
     <!-- jumbo 80% width-->
     <section class="jumbo">
         <div class="bg-blue">
-            <div class="container flex">
+            <div class="container">
                 <h1>Tutto ciò che ti serve per il<br>lavoro, in un unico posto</h1>
+            </div>
+            <div class="container flex">
                 <div class="jumbo-l">
                     <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto.</p>
                     <button class="btn btn-blue hover">Inizia la tua prova gratuita</button>
@@ -58,7 +60,7 @@
 
             <div class="main-top m-top">
                 <h2>Trova il piano business che fa per te</h2>
-                <input type="radio" name="fatturazione" id="fatt-mensile" required>
+                <input type="radio" name="fatturazione" id="fatt-mensile" required checked>
                 <label for="fatt-mensile">Fatturazione mensile</label>
                 <input type="radio" name="fatturazione" id="fatt-annuale" required>
                 <label for="fatt-annuale">Fatturazione annuale</label>
@@ -136,16 +138,16 @@
                         </ul>
                     </div>
                 </div>
+            </div>
 
-                <!-- full width box -->
-                <div class="main-plans">
-                    <div class="plan-single"><i class="fa-solid fa-building"></i>&nbsp;Team</div>
-                    <div class="description-plan relative">
-                        <h3>Enterprice</h3>
-                        <h4>Conta l'ufficio vendite per i prezzi</h4>
-                        <button class="btn btn-blue hover">Contatta l'ufficio vendite</button>
-                        <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su quaslsiasi scala.</p>
-                    </div>
+            <!-- full width box -->
+            <div class="ho-main-plans">
+                <div class="plan-single"><i class="fa-solid fa-building"></i>&nbsp;Team</div>
+                <div class="description-plan relative">
+                    <h3>Enterprice</h3>
+                    <h4>Conta l'ufficio vendite per i prezzi</h4>
+                    <button class="btn btn-blue hover">Contatta l'ufficio vendite</button>
+                    <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su quaslsiasi scala.</p>
                 </div>
             </div>
     </main>
@@ -277,8 +279,8 @@
 
     <!-- footer top and bottom -->
     <footer>
-        <section class="footer-top container flex fl-sb">
-            <nav class="col">
+        <div class="footer-top container flex fl-sb">
+            <div class="col">
                 <h3>Dropbox</h3>
                 <ul>
                     <li><a href="#">Applicazione desktop</a></li>
@@ -287,9 +289,9 @@
                     <li><a href="#">Sicurezza</a></li>
                     <li><a href="#">Funzioni</a></li>
                 </ul>
-            </nav>
+            </div>
 
-            <nav class="col">
+            <div class="col">
                 <h3>Prodotti</h3>
                 <ul>
                     <li><a href="#">Applicazione desktop</a></li>
@@ -298,9 +300,9 @@
                     <li><a href="#">Sicurezza</a></li>
                     <li><a href="#">Funzioni</a></li>
                 </ul>
-            </nav>
+            </div>
 
-            <nav class="col">
+            <div class="col">
                 <h3>Azienda</h3>
                 <ul>
                     <li><a href="#">Applicazione desktop</a></li>
@@ -309,9 +311,9 @@
                     <li><a href="#">Sicurezza</a></li>
                     <li><a href="#">Funzioni</a></li>
                 </ul>
-            </nav>
+            </div>
 
-            <nav class="col">
+            <div class="col">
                 <h3>Supporto</h3>
                 <ul>
                     <li><a href="#">Applicazione desktop</a></li>
@@ -320,9 +322,9 @@
                     <li><a href="#">Sicurezza</a></li>
                     <li><a href="#">Funzioni</a></li>
                 </ul>
-            </nav>
+            </div>
 
-            <nav class="col">
+            <div class="col">
                 <h3>Community</h3>
                 <ul>
                     <li><a href="#">Applicazione desktop</a></li>
@@ -331,12 +333,12 @@
                     <li><a href="#">Sicurezza</a></li>
                     <li><a href="#">Funzioni</a></li>
                 </ul>
-            </nav>
-        </section>
-        <section class="footer-bottom container">
+            </div>
+        </div>
+        <div class="footer-bottom container">
             <div class="br"></div>
             <div class="lang"><i class="fa-solid fa-earth-americas"></i><a href="#">&nbsp;Italiano&nbsp;</a><i class="fa-solid fa-sort-up"></i></div>
-        </section>
+        </div>
     </footer>
     
 </body>

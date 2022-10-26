@@ -91,7 +91,7 @@ ul li a:hover{
 
 .container{
     width: 62%;
-    max-width: 1140px;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
@@ -433,6 +433,15 @@ span.author{
     width: 60%;
 }
 
+.ho-main-plans{
+    flex-direction: row;
+    border: 1px solid #dbdbdb;
+    margin-top: 30px;
+    font-size: .7rem;
+}
+
+
+/* full width box */
 .full-width-box{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -451,7 +460,6 @@ span.author{
     align-self: flex-start;
 }
 
-
 /* FAQ */
 .faq{
     margin-top: 30px;
@@ -468,8 +476,7 @@ span.author{
 }
 
 .faq h5{
-    padding: 1rem 0;
-    margin: 1rem 0;
+    padding: 2rem 0;
     cursor: s-resize;
     font-weight: 700;
 }
@@ -503,7 +510,7 @@ footer ul li{
     font-size: 0.8rem;
 }
 
-footer ul li a{
+footer li a{
     color: white;
 }
 
@@ -513,7 +520,7 @@ footer .br{
     margin-top: 100px;
 }
 
-nav.col{
+div.col{
     margin-top: 40px;
 }
 
